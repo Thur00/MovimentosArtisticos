@@ -1,0 +1,41 @@
+.labelFloat input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #F70303;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.labelFloat {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.labelFloat input:focus {
+    border-bottom: 2px solid #ff5959;
+}
+
+.labelFloat label {
+    color: #F70303;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.labelFloat input:focus+label,
+.labelFloat input:valid+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #ff5959;
+}
