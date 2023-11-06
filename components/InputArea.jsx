@@ -1,19 +1,26 @@
-"use client"
+import { UserLogado } from "@/context/UserLogado"
+import { useContext, useState } from "react"
+import styles from "./login.module.css"
 
-import { UserLogado, UserLogadoProvider } from "@/context/UserLogado";
-import InputArea from "@/components/InputArea";
-import { useContext, useState } from "react";
-import styles from "@/components/login.module.css"
-import Link from "next/link";
+export function UserName() {
+    if (InputArea.name !== null) {
+        return InputArea.name
+    }
+    else {
+        return PROFESSORLEANDRO
+    }
+}
 
 
+function InputArea() {
+    const UserLogadoCtx = useContext(UserLogado)
 
-function LogIn() {
+    const [name, setName] = useState("")
 
-    const [name, setName] = useState("");
 
     return (
-        <UserLogado.Provider value={{ name }}>
+        <>
+            <div>{UserLogadoCtx.name}</div>
             <div className={styles.labelFloat}>
                 <input type="text"
                     paceholder=""
@@ -36,13 +43,9 @@ function LogIn() {
                     required />
                 <label id="userLabel" for="usuario">Idade</label>
             </div>
-
-            <Link href="/paginas/sobreNos">
-                <button>Cadastrar-se</button>
-            </Link>
-
-        </UserLogado.Provider>
+            <button type="submit" onClick={UserName}>Cadastrar-se</button>
+        </>
     )
 }
 
-export default LogIn
+export default InputArea

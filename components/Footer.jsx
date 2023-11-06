@@ -16,9 +16,11 @@ function Footer() {
                 na matéria de Artes
             </p>
 
-            <button className={styles.footbotao}>
-                <Link href="/LogIn">Sobre nós</Link>
-            </button>
+
+            <Link href="/paginas/sobreNos">
+                <button className={styles.footbotao}>Sobre nós</button>
+            </Link>
+
         </footer>
     )
 }

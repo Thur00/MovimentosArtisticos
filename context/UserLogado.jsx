@@ -1,9 +1,10 @@
+import { UserName } from "@/components/InputArea";
 import { createContext, useState } from "react";
 
 export const UserLogado = createContext(null)
 
 export const UserLogadoProvider = ({ children }) => {
-    const [name, setName] = useState("")
+    const [name, setName] = useState(UserName)
 
     return (
         <UserLogado.Provider value={{ name, setName }}>
