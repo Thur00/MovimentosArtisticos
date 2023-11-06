@@ -3,17 +3,26 @@ import { useState } from "react"
 const GaleriaImagens = (props) => {
     const [selecionadoImg, setSelecionadoImg] = useState(null)
     const [selecionadoText, setSelecionadoText] = useState(null)
+    const [selecionadoImage, setSelecionadoImage] = useState(null)
 
-    const openImage = (imageUrl) => {
-        setSelecionadoImg(imageUrl.img)
+    const openDuo = (imageUrl) => {
+        setSelecionadoImg(imageUrl.imgI)
         setSelecionadoText(imageUrl.texto)
     }
 
-    const closeImage = () => {
+    const closeDuo = () => {
         setSelecionadoImg(null)
     }
 
-    
+    const openImg = (imageUrl) => {
+        setSelecionadoImage(imageUrl.imgI)
+    }
+
+    const closeImg = () => {
+        setSelecionadoImage(null)
+    }
+
+
     return (
         <>
             <div className="ImageGallery">
@@ -21,18 +30,18 @@ const GaleriaImagens = (props) => {
                     <div
                         key={index}
                         className="imageThumbnail"
-
                     >
-                        <img src={imageUrl.img} alt={`Imagem ${index}`} />
+                        <img onClick={() => openImg(imageUrl)} src={imageUrl.imgC} alt={`Imagem ${index}`} />
 
-                        <button onClick={() => openImage(imageUrl)}>Veja mais</button>
+                        <button onClick={() => openDuo(imageUrl)}> Saiba mais </button>
+
                     </div>
                 ))}
             </div>
 
             {selecionadoImg && (
-                <div className="imageModal">
-                    <span className="closeButton" onClick={closeImage}>
+                <div className="imageModal1">
+                    <span className="closeButton" onClick={closeDuo}>
                         &times;
                     </span>
 
@@ -40,6 +49,17 @@ const GaleriaImagens = (props) => {
 
                     <p>{selecionadoText}</p>
 
+
+                </div>
+            )}
+
+            {selecionadoImage && (
+                <div className="imageModal2">
+                    <span className="closeButton" onClick={closeImg}>
+                        &times;
+                    </span>
+
+                    <img src={selecionadoImage} alt="Imagem Selecionada" />
 
                 </div>
             )}
