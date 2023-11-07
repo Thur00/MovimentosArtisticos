@@ -1,7 +1,7 @@
 import Nav from '@/components/Header'
 import './globals.css'
 import Footer from "@/components/Footer"
-
+    
 export const metadata = {
     title: 'Movimentos Artisticos',
     description: 'Feito pelo Grupo 1',
