@@ -6,11 +6,12 @@ margin: 0;}
   background-color: #4b4e58;
   color:#efeae1;
   display: flex;
-  flex-direction:row;
-  align-items:flex-end;
+  flex-direction:column;
+  align-items:center;
   padding: 20px;
 margin-top: 2%;
 letter-spacing: .1rem;
+justify-content: center;
 }
 body{
   background-color: #efeae1;
