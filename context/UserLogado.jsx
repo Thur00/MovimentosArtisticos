@@ -1,4 +1,4 @@
-import { UserName } from "@/components/InputArea";
+import { UserName } from "@/components/Login";
 import { createContext, useState } from "react";
 
 export const UserLogado = createContext(null)

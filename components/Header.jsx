@@ -1,42 +1,64 @@
+"use client"
+
 import { UserLogado, UserLogadoProvider } from "@/context/UserLogado"
-import styles from "./Header.module.css"
 import Link from "next/link"
+import { useContext } from "react";
+import { Abril_Fatface } from "next/font/google";
+import { Open_Sans } from "next/font/google";
+
+const abril = Abril_Fatface({
+    subsets: ['latin'],
+    weight: '400'
+})
+
+const open = Open_Sans({
+    subsets: ['latin'],
+    weight: '400'
+})
 
 function Nav(props) {
-    const UserLogadoCtx = useContext(UserLogado);
 
     return (
         <>
             <UserLogadoProvider>
-                <div className={styles.titulo}>
-                    <h1>MOVIMENTOS ARTISTICOS</h1>
-                    <h3>Olá {UserLogadoCtx.name}</h3>
+                <div className="headerTitulo">
+                    <h1 className={abril.className}>
+                        <Link href="/">MOVIMENTOS ARTISTICOS</Link>
+                    </h1>
+                    <div>
+                        <h3 className={open.className}>
+                            <Link href="/LogIn">Log In</Link>
+                        </h3>
+                    </div>
                 </div>
-                <nav>
-                    <ul className={styles.navegacao}>
+                <nav className="navegacao">
+                    <ul className={open.className}>
                         <li>
-                            <Link href="">Renascimento</Link>
+                            <Link href="/">Início</Link>
                         </li>
                         <li>
-                            <Link href="">Barroco</Link>
+                            <Link href="/paginas/renascimento">Renascimento</Link>
                         </li>
                         <li>
-                            <Link href="">Romantismo</Link>
+                            <Link href="/paginas/barroco">Barroco</Link>
                         </li>
                         <li>
-                            <Link href="">Neoclassicismo</Link>
+                            <Link href="/paginas/romantismo">Romantismo</Link>
                         </li>
                         <li>
-                            <Link href="">Rococó</Link>
+                            <Link href="/paginas/neoclassicismo">Neoclassicismo</Link>
                         </li>
                         <li>
-                            <Link href="">Realismo</Link>
+                            <Link href="/paginas/rococo">Rococó</Link>
                         </li>
                         <li>
-                            <Link href="">Impressionismo</Link>
+                            <Link href="/paginas/realismo">Realismo</Link>
+                        </li >
+                        <li>
+                            <Link href="/paginas/impressionismo">Impressionismo</Link>
                         </li>
                         <li>
-                            <Link href="">Abstracionismo</Link>
+                            <Link href="/paginas/abstracionismo">Abstracionismo</Link>
                         </li>
                     </ul>
                 </nav>
