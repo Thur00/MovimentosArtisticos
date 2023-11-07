@@ -2,7 +2,7 @@
   background-image: url('/CapaIndex.png');
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 60vh;
   position: relative;
 }
 
@@ -10,6 +10,53 @@
   position: absolute;
   left: 15px;
   bottom: 10px;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   width: 50%;
+}
+
+.navImg {
+  margin: 0 5% 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+
+.boxGrande {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  aspect-ratio: 1/1;
+}
+
+.imgCumprido {
+  width: 96%;
+  height: 46%;
+  margin: 2%;
+}
+
+.imgQuadrado {
+  width: 46%;
+  height: 46%;
+  margin: 2%;
+}
+
+.imgCumprido img,
+.imgQuadrado img,
+.imgEspecial img {
+  width: 100%;
+  height: 100%;
+}
+
+.boxPequeno {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  aspect-ratio: 1/2;
+}
+
+.imgEspecial {
+  width: 96%;
+  height: 46%;
+  margin: 4%;
 }
