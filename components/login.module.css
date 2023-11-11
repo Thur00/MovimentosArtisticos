@@ -1,7 +1,7 @@
 .inputBox {
     background-color: #dad2bc;
     width: 30vw;
-    height: 60vh;
+    height: 70vh;
     margin: 5% auto;
     border-radius: 20px;
     display: flex;
@@ -21,6 +21,7 @@
     font-size: 15pt;
     transition: all .3s ease-out;
     border-radius: 0;
+    color: #4b4e58;
 }
 
 .labelFloat {
@@ -53,14 +54,14 @@
 }
 
 .inputBotao {
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: center;
     margin-top: 5%;
 }
 
 .inputBotao button {
-    width: 90%;
+    width: 100%;
     padding: 15px 10px;
     border: none;
     background-color: #4b4e58;
