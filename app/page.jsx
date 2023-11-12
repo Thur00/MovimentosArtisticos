@@ -25,7 +25,7 @@ export default function Home() {
                     artísticos que marcaram a história<br />
                     e inspiram gerações
                 </p>
-            </div>
+            </div>  
 
 
             <div className={styles.navImg}>

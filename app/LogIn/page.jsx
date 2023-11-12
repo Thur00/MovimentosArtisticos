@@ -1,22 +1,23 @@
 "use client"
 
-import { UserLogado, UserLogadoProvider } from "@/context/UserLogado";
+import { UserLogado, UserLogadoProvider } from "@/context/UserContext";
 import InputArea from "@/components/Login";
 import { useContext, useState } from "react";
 import styles from "@/components/login.module.css"
 import Link from "next/link";
+import { Abril_Fatface } from "next/font/google"
 
+const abril = Abril_Fatface({
+    subsets: ['latin'],
+    weight: '400'
+})
 
 
 function LogIn() {
-
-    const [name, setName] = useState("");
-
     return (
-        <UserLogado.Provider value={{ name }}>
-
+        <>
             <div className="titulo">
-                <h1>Log In</h1>
+                <h1 className={abril.className}>Log In</h1>
             </div>
 
 
@@ -45,11 +46,14 @@ function LogIn() {
                 </div>
 
                 <Link href="/" className={styles.inputBotao}>
-                    <button>Cadastre-se</button>
+                    <button onClick={() => {
+                        setCurrentUser({
+                            name: name
+                        });
+                    }}>Cadastre-se</button>
                 </Link>
             </div>
-
-        </UserLogado.Provider>
+        </>
     )
 }
 

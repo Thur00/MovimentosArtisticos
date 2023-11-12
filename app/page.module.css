@@ -11,7 +11,7 @@
     position: absolute;
     left: 6%;
     bottom: 60px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     width: 60%;
     color: #efeae1;
 }
@@ -97,4 +97,38 @@
     width: 96%;
     height: 46%;
     margin: 4%;
+}
+
+@media only screen and (max-width:800px) {
+    .capa {
+        height: 30vh;
+    }
+
+    .capa p {
+        width: 90%;
+        font-size: 1rem;
+        left: 3%;
+        bottom: 30px;
+    }
+
+    .boxGrande,
+    .boxPequeno {
+        width: 100%;
+    }
+
+    .boxPequeno {
+        aspect-ratio: 2/1;
+    }
+
+    .imgEspecial {
+        width: 46%;
+        height: 92%;
+        margin: 2%;
+    }
+
+    .imgCumprido p,
+    .imgQuadrado p,
+    .imgEspecial p {
+        font-size: 1.3rem;
+    }
 }

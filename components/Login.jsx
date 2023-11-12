@@ -1,4 +1,4 @@
-import { UserLogado } from "@/context/UserLogado"
+import { UserLogado } from "@/context/UserContext"
 import { useContext, useState } from "react"
 import styles from "./login.module.css"
 

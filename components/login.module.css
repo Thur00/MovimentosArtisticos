@@ -69,3 +69,10 @@
     color: #dad2bc;
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width:800px) {
+    .inputBox {
+        width: 90%;
+        height: 50vh;
+    }
+}

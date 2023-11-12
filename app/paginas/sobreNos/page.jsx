@@ -2,7 +2,7 @@
 
 import Integrante from '@/components/Integrantes'
 import styles from '@/components/integrante.module.css'
-import { UserLogado } from '@/context/UserLogado';
+import { UserLogado } from '@/context/UserContext';
 import { useContext } from 'react';
 import { Abril_Fatface } from "next/font/google";
 
