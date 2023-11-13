@@ -1,50 +1,26 @@
-import { UserLogado } from "@/context/UserContext"
-import { useContext, useState } from "react"
+"use client"
+
+import { useUserContext } from "@/context/UserContext"
 import styles from "./login.module.css"
-
-export function UserName() {
-    if (InputArea.name !== null) {
-        return InputArea.name
-    }
-    else {
-        return PROFESSORLEANDRO
-    }
-}
-
+import Link from "next/link"
 
 function InputArea() {
-    const UserLogadoCtx = useContext(UserLogado)
 
-    const [name, setName] = useState("")
-
+    const { user } = useUserContext()
 
     return (
-        <>
-            <div>{UserLogadoCtx.name}</div>
-            <div className={styles.labelFloat}>
-                <input type="text"
-                    paceholder=""
-                    onChange={(e) => setName(e.target.value)}
-                    value={name}
-                    required />
-                <label for="usuario">Nome</label>
-            </div>
+        <div className={styles.inputBox}>
 
             <div className={styles.labelFloat}>
-                <input type="text"
-                    paceholder=""
-                    required />
-                <label for="usuario">Sobrenome</label>
-            </div>
 
-            <div className={styles.labelFloat}>
-                <input type="number"
-                    paceholder=""
-                    required />
-                <label id="userLabel" for="usuario">Idade</label>
+                <label>Você está logado como: {user.name}</label>
+
             </div>
-            <button type="submit" onClick={UserName}>Cadastrar-se</button>
-        </>
+            <Link href="/paginas/index" className={styles.inputBotao}>
+                <button type="submit">Entrar</button>
+            </Link>
+
+        </div>
     )
 }
 

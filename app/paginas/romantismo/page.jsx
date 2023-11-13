@@ -42,15 +42,7 @@ function Romantismo() {
                 <h2>Saiba mais sobre o Movimento!</h2>
             </div>
             <div className="vids">
-                <iframe
-                    width="600"
-                    height="300"
-                    src="/videos/romantismoEdit.mp4"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+                <iframe width="600" height="300" src="https://www.youtube.com/embed/DQqN9OunJSI?si=_xDYOiUJ2QMT6BdZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </main>
     )

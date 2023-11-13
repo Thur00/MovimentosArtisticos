@@ -10,47 +10,19 @@
     align-items: center;
 }
 
-.labelFloat input {
-    width: 100%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 4px solid #4b4e58;
-    background-color: transparent;
-    outline: none;
-    font-size: 15pt;
-    transition: all .3s ease-out;
-    border-radius: 0;
-    color: #4b4e58;
-}
-
 .labelFloat {
-    position: relative;
     padding-top: 13px;
     margin: 5% 0;
     width: 70%;
-}
-
-.labelFloat input:focus {
-    border-bottom: 6px solid #70798c;
+    text-align: center;
 }
 
 .labelFloat label {
     color: #4b4e58;
     pointer-events: none;
-    position: absolute;
-    font-size: 1.5rem;
-    top: 0;
-    left: 0;
+    font-size: 1.9rem;
     margin-top: 13px;
     transition: all .3s ease-out;
-}
-
-.labelFloat input:focus+label,
-.labelFloat input:valid+label {
-    font-size: 1rem;
-    margin-top: 0;
-    color: #70798c;
 }
 
 .inputBotao {
@@ -58,6 +30,8 @@
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .inputBotao button {

@@ -46,15 +46,7 @@ function Abstracionismo(){
         </div>
 
         <div className="vids">
-        <iframe 
-            width="600" 
-            height="300" 
-            src="/videos/abstracionismoEdit.mp4" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-            </iframe>
+        <iframe width="600" height="300" src="https://www.youtube.com/embed/MGjFv0Zstm0?si=zof6xMPP5xGNyjcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         </main>

@@ -41,15 +41,7 @@ function Rococo() {
                 <h2>Saiba mais sobre o Movimento!</h2>
             </div>
             <div className="vids">
-                <iframe
-                    width="600"
-                    height="300"
-                    src="/videos/rococoEdit.mp4"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+                <iframe width="600" height="300" src="https://www.youtube.com/embed/SRxcTxR0iZM?si=r40C7NtDiPG30NCX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </main>
     )
