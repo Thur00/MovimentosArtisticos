@@ -1,4 +1,5 @@
 
+import Image from 'next/image'
 import styles from './integrante.module.css'
 
 function Integrante(props) {
@@ -6,12 +7,11 @@ function Integrante(props) {
     return (
         <>
             {props.ImageUrls.map((imageUrl, index) => (
-                <div className={styles.card}>
+                <div key={index} className={styles.card}>
                     <div
-                        key={index}
                         className={styles.imgBx}
                     >
-                        <img src={imageUrl.img} alt={`Integrante ${index + 1}`} title={`Integrante ${index + 1}`} />
+                        <Image src={imageUrl.img} alt={`Integrante ${index + 1}`} title={`Integrante ${index + 1}`} />
                     </div>
                     <div className={styles.content}>
                         <h3>Nome: {imageUrl.nome}</h3><br />
