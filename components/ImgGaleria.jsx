@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { useState } from "react"
 
 function GaleriaImagens(props){
@@ -28,7 +29,7 @@ function GaleriaImagens(props){
                         className="imageThumbnail"
 
                     >
-                        <img onClick={()=>openImg(imageUrl)} src={imageUrl.imgC} alt={`Imagem ${index}`} />
+                        <Image onClick={()=>openImg(imageUrl)} src={imageUrl.imgC} alt={`Imagem ${index}`} />
 
                         <button className="button"onClick={() => openDuo (imageUrl)}
                             
@@ -44,7 +45,7 @@ function GaleriaImagens(props){
                         &times;
                     </span>
 
-                    <img src={selecionadoImg} alt="Imagem Selecionada" />
+                    <Image src={selecionadoImg} alt="Imagem Selecionada" />
 
                     <div>
                     <p>{selecionadoText}</p> 
@@ -59,7 +60,7 @@ function GaleriaImagens(props){
                         &times;
                     </span>
 
-                    <img src={selecionadoImage} alt="Imagem Selecionada" />
+                    <Image src={selecionadoImage} alt="Imagem Selecionada" />
 
 
                 </div>
