@@ -31,41 +31,41 @@ export default function Home() {
             <div className={styles.navImg}>
                 <div className={styles.boxGrande}>
                     <Link href="/paginas/renascimento" className={styles.imgCumprido}>
-                        <Image src="/index/renascimento.jpg" alt="" />
+                        <Image src="/index/renascimento.jpg" fill  alt="" />
                         <p className={abril.className}>Renascimento</p>
                     </Link>
                     <Link href="/paginas/rococo" className={styles.imgQuadrado}>
-                        <Image src="/index/rococo.jpg" alt="" />
+                        <Image src="/index/rococo.jpg" fill sizes="100%, 100%" alt="" />
                         <p className={abril.className}>Rococó</p>
                     </Link>
                     <Link href="/paginas/realismo" className={styles.imgQuadrado}>
-                        <Image src="/index/realismo.jpg" alt="" />
+                        <Image src="/index/realismo.jpg" fill sizes="100%, 100%" alt="" />
                         <p className={abril.className}>Realismo</p>
                     </Link>
                 </div>
 
                 <div className={styles.boxGrande}>
                     <Link href="/paginas/barroco" className={styles.imgQuadrado}>
-                        <Image src="/index/barroco.jpg" alt="" />
+                        <Image src="/index/barroco.jpg" fill sizes="100%, 100%" alt="" />
                         <p className={abril.className}>Barroco</p>
                     </Link>
                     <Link href="/paginas/romantismo" className={styles.imgQuadrado}>
-                        <Image src="/index/romantismo.jpg" alt="" />
+                        <Image src="/index/romantismo.jpg" fill sizes="100%, 100%" alt="" />
                         <p className={abril.className}>Romantismo</p>
                     </Link>
                     <Link href="/paginas/impressionismo" className={styles.imgCumprido}>
-                        <Image src="/index/impressionismo.jpg" alt="" />
+                        <Image src="/index/impressionismo.jpg" fill sizes="100%, 100%" alt="" />
                         <p className={abril.className}>Impressionismo</p>
                     </Link>
                 </div>
 
                 <div className={styles.boxPequeno}>
                     <Link href="/paginas/neoclassicismo" className={styles.imgEspecial}>
-                        <Image src="/index/neoclassicismo.jpg" alt="" />
+                        <Image src="/index/neoclassicismo.jpg" fill sizes="100%, 100%" alt="" />
                         <p className={abril.className}>Neoclassicismo</p>
                     </Link>
                     <Link href="/paginas/abstracionismo" className={styles.imgEspecial}>
-                        <Image src="/index/abstracionismo.jpg" alt="" />
+                        <Image src="/index/abstracionismo.jpg" fill sizes="100%, 100%" alt="" />
                         <p className={abril.className}>Abstracionismo</p>
                     </Link>
                 </div>
