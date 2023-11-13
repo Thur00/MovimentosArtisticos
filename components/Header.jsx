@@ -106,7 +106,7 @@ function Nav(props) {
 
                 <div className="mobile-menu-icon">
 
-                    <button onClick={menuShow} className="btn-icon"><Image className="icon" src="/menuIcon.png" alt="Menu Icon" /></button>
+                    <button onClick={menuShow} className="btn-icon"><Image className="icon" width={24} height={24} src="/menuIcon.png" alt="Menu Icon" /></button>
 
                 </div>
             </nav>
@@ -120,7 +120,7 @@ function Nav(props) {
                 </div>
                 <div className="mobile-menu-icon">
 
-                    <button onClick={menuShow} className="btn-icon"><Image className="icon" src="/menuIcon-close.png" alt="Menu Icon" /></button>
+                    <button onClick={menuShow} className="btn-icon"><Image className="icon" width={20} height={20} src="/menuIcon-close.png" alt="Menu Icon" /></button>
 
                 </div>
                 <ul className={open.className}>

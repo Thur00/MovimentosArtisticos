@@ -254,11 +254,11 @@ p {
     margin: 10px;
     position: relative;
     overflow: hidden;
-
+    width: 400px;
+    height: 300px;
 }
 
-.imageThumbnail img {
-    width: 400px;
+.imageTeste {
     object-fit: cover;
     transition: transform 900ms;
 }

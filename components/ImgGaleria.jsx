@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { useState } from "react"
 
-function GaleriaImagens(props){
+function GaleriaImagens(props) {
     const [selecionadoImg, setSelecionadoImg] = useState(null)
     const [selecionadoText, setSelecionadoText] = useState(null)
     const [selecionadoImage, setSelecionadoImage] = useState(null)
@@ -15,24 +15,25 @@ function GaleriaImagens(props){
         setSelecionadoImg(null)
     }
     const openImg = (imageUrl) => {
-    setSelecionadoImage(imageUrl.imgI)
+        setSelecionadoImage(imageUrl.imgI)
     }
 
     const closeImg = () => {
-        setSelecionadoImage(null)}
+        setSelecionadoImage(null)
+    }
     return (
         <>
             <div key={index} className="ImageGallery">
                 {props.ImageUrls.map((imageUrl, index) => (
                     <div
                         className="imageThumbnail"
-
-                    >
-                        <Image onClick={()=>openImg(imageUrl)} src={imageUrl.imgC} alt={`Imagem ${index}`} />
-
-                        <button className="button"onClick={() => openDuo (imageUrl)}
-                            
                         
+                    >
+                        <Image onClick={() => openImg(imageUrl)} fill sizes="100%, 100%" src={imageUrl.imgC} alt={`Imagem ${index}`} />
+
+                        <button className="button" onClick={() => openDuo(imageUrl)}
+
+
                         >Saiba mais</button>
                     </div>
                 ))}
@@ -47,7 +48,7 @@ function GaleriaImagens(props){
                     <Image src={selecionadoImg} alt="Imagem Selecionada" />
 
                     <div>
-                    <p>{selecionadoText}</p> 
+                        <p>{selecionadoText}</p>
                     </div>
 
                 </div>
