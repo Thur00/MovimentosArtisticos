@@ -23,11 +23,11 @@ function GaleriaImagens(props) {
     }
     return (
         <>
-            <div key={index} className="ImageGallery">
+            <div className="ImageGallery">
                 {props.ImageUrls.map((imageUrl, index) => (
                     <div
                         className="imageThumbnail"
-                        
+                        key={index}
                     >
                         <Image onClick={() => openImg(imageUrl)} fill sizes="100%, 100%" src={imageUrl.imgC} alt={`Imagem ${index}`} />
 
