@@ -1,0 +1,53 @@
+.inputBox {
+    background-color: #dad2bc;
+    width: 30vw;
+    height: 70vh;
+    margin: 4% auto 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelFloat {
+    padding-top: 13px;
+    margin: 5% 0;
+    width: 70%;
+    text-align: center;
+}
+
+.labelFloat label {
+    color: #4b4e58;
+    pointer-events: none;
+    font-size: 1.9rem;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.inputBotao {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+.inputBotao button {
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    background-color: #4b4e58;
+    border-radius: 10px;
+    color: #dad2bc;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:800px) {
+    .inputBox {
+        width: 90%;
+        height: 50vh;
+        margin-top: 30%;
+    }
+}
