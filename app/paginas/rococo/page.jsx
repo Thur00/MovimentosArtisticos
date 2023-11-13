@@ -28,7 +28,7 @@ function Rococo() {
             </div>
             <br></br>
             <div className="corpo">
-                <p className={open.className}>O Rococó, um estilo artístico que floresceu na Europa nos séculos XVIII e XIX, representa uma reviravolta encantadora na história da arte e do design. Marcado por sua ênfase na delicadeza, elegância e ornamentação, o Rococó emerge como uma reação ao formalismo rígido do Barroco. Com suas cores suaves, curvas graciosas e detalhes intrincados, o Rococó evoca uma sensação de leveza e frivolidade. Neste período, artistas, arquitetos e artesãos exploraram a beleza e a graciosidade em uma variedade de formas, criando ambientes que cativam os sentidos.</p>
+                <p >O Rococó, um estilo artístico que floresceu na Europa nos séculos XVIII e XIX, representa uma reviravolta encantadora na história da arte e do design. Marcado por sua ênfase na delicadeza, elegância e ornamentação, o Rococó emerge como uma reação ao formalismo rígido do Barroco. Com suas cores suaves, curvas graciosas e detalhes intrincados, o Rococó evoca uma sensação de leveza e frivolidade. Neste período, artistas, arquitetos e artesãos exploraram a beleza e a graciosidade em uma variedade de formas, criando ambientes que cativam os sentidos.</p>
             </div>
             <div className="titgal">
                 <h2>Galeria de Imagens</h2>

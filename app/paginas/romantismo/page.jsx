@@ -29,7 +29,7 @@ function Romantismo() {
             </div>
             <br></br>
             <div className="corpo">
-                <p className={open.className}>O Romantismo, um movimento cultural que varreu a Europa no final do século XVIII e início do XIX, é caracterizado por uma profunda ênfase na expressão emocional, na individualidade e na busca pela liberdade artística. Foi uma reação ao Iluminismo e ao racionalismo da época, com ênfase na intuição e na imaginação. Neste período, escritores, artistas e músicos buscaram inspiração na natureza, nas emoções humanas e nas histórias de amor, criando obras que evocam paixões e sentimentos profundos. O Romantismo não apenas influenciou a literatura e a arte, mas também teve um impacto duradouro na política e na cultura, moldando o pensamento e a criatividade das gerações futuras.</p>
+                <p>O Romantismo, um movimento cultural que varreu a Europa no final do século XVIII e início do XIX, é caracterizado por uma profunda ênfase na expressão emocional, na individualidade e na busca pela liberdade artística. Foi uma reação ao Iluminismo e ao racionalismo da época, com ênfase na intuição e na imaginação. Neste período, escritores, artistas e músicos buscaram inspiração na natureza, nas emoções humanas e nas histórias de amor, criando obras que evocam paixões e sentimentos profundos. O Romantismo não apenas influenciou a literatura e a arte, mas também teve um impacto duradouro na política e na cultura, moldando o pensamento e a criatividade das gerações futuras.</p>
             </div>
             <div className="titgal">
                 <h2>Galeria de Imagens</h2>
