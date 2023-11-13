@@ -22,16 +22,11 @@ const ImageUrls = [
 
 function SobreNos() {
 
-    const UserLogadoCtx = useContext(UserLogado)
-
     return (
         <main className={abril.className}>
             <div className="titulo">
                 <h1>Sobre nós</h1>
             </div>
-
-            <div>{UserLogadoCtx}</div>
-
             
             <div className={styles.container}>
                 <Integrante ImageUrls={ImageUrls} />

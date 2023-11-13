@@ -46,9 +46,17 @@ function Renascimento() {
                 <h2>Saiba mais sobre o Movimento!</h2>
             </div>
             <div className="vids">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P4BmEwdJZvc?si=OEgZvJyXFXqsuiJm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe
+                    width="600"
+                    height="300"
+                    src="/videos/renascimentoEdit.mp4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
             </div>
-            </>
+        </>
     )
 }
 export default Renascimento

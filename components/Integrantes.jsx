@@ -11,7 +11,7 @@ function Integrante(props) {
                         key={index}
                         className={styles.imgBx}
                     >
-                        <img src={imageUrl.img} alt={`Imagem ${index}`} title={`Imagem ${index}`} />
+                        <img src={imageUrl.img} alt={`Integrante ${index + 1}`} title={`Integrante ${index + 1}`} />
                     </div>
                     <div className={styles.content}>
                         <h3>Nome: {imageUrl.nome}</h3><br />

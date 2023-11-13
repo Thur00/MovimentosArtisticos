@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useContext, useState } from "react";
+import { cloneElement, useContext, useState } from "react";
 import { Abril_Fatface } from "next/font/google";
 import { Open_Sans } from "next/font/google";
 
@@ -33,16 +33,24 @@ function Nav(props) {
 
             menuMobile.classList.add('open')
 
-            document.querySelector('.icon').src = "/menuIcon-close.png"
+            document.querySelector('.icon').src = "/menuIcon.png"
 
         }
 
     }
 
+    const closeMenu = () => {
+        let menuMobile = document.querySelector('.mobile-menu')
+
+        if (menuMobile.classList.contains('open')) {
+
+            menuMobile.classList.remove('open')
+
+        }
+    }
 
     return (
         <>
-            <UserContext.Provider>
                 <div className="headerTitulo">
                     <h1 className={abril.className}>
                         <Link href="/">MOVIMENTOS ARTISTICOS</Link>
@@ -107,37 +115,35 @@ function Nav(props) {
                     </div>
                     <ul className={open.className}>
                         <li>
-                            <Link href="/">Início</Link>
+                            <Link href="/" onClick={closeMenu}>Início</Link>
                         </li>
                         <li>
-                            <Link href="/paginas/renascimento">Renascimento</Link>
+                            <Link href="/paginas/renascimento" onClick={closeMenu}>Renascimento</Link>
                         </li>
                         <li>
-                            <Link href="/paginas/barroco">Barroco</Link>
+                            <Link href="/paginas/barroco" onClick={closeMenu}>Barroco</Link>
                         </li>
                         <li>
-                            <Link href="/paginas/romantismo">Romantismo</Link>
+                            <Link href="/paginas/romantismo" onClick={closeMenu}>Romantismo</Link>
                         </li>
                         <li>
-                            <Link href="/paginas/neoclassicismo">Neoclassicismo</Link>
+                            <Link href="/paginas/neoclassicismo" onClick={closeMenu}>Neoclassicismo</Link>
                         </li>
                         <li>
-                            <Link href="/paginas/rococo">Rococó</Link>
+                            <Link href="/paginas/rococo" onClick={closeMenu}>Rococó</Link>
                         </li>
                         <li>
-                            <Link href="/paginas/realismo">Realismo</Link>
+                            <Link href="/paginas/realismo" onClick={closeMenu}>Realismo</Link>
                         </li >
                         <li>
-                            <Link href="/paginas/impressionismo">Impressionismo</Link>
+                            <Link href="/paginas/impressionismo" onClick={closeMenu}>Impressionismo</Link>
                         </li>
                         <li>
-                            <Link href="/paginas/abstracionismo">Abstracionismo</Link>
+                            <Link href="/paginas/abstracionismo" onClick={closeMenu}>Abstracionismo</Link>
                         </li>
                     </ul>
 
                 </div>
-
-            </UserContext.Provider>
         </>
 
     )
