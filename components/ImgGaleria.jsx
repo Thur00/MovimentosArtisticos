@@ -22,10 +22,9 @@ function GaleriaImagens(props){
         setSelecionadoImage(null)}
     return (
         <>
-            <div className="ImageGallery">
+            <div key={index} className="ImageGallery">
                 {props.ImageUrls.map((imageUrl, index) => (
                     <div
-                        key={index}
                         className="imageThumbnail"
 
                     >

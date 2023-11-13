@@ -7,9 +7,8 @@ function Integrante(props) {
     return (
         <>
             {props.ImageUrls.map((imageUrl, index) => (
-                <div className={styles.card}>
+                <div key={index} className={styles.card}>
                     <div
-                        key={index}
                         className={styles.imgBx}
                     >
                         <Image src={imageUrl.img} alt={`Integrante ${index + 1}`} title={`Integrante ${index + 1}`} />
