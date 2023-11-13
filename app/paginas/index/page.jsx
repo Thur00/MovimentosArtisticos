@@ -31,7 +31,7 @@ export default function Home() {
             <div className={styles.navImg}>
                 <div className={styles.boxGrande}>
                     <Link href="/paginas/renascimento" className={styles.imgCumprido}>
-                        <Image src="/index/renascimento.jpg" fill  alt="" />
+                        <Image src="/index/renascimento.jpg" fill sizes="100%, 100%" alt="" />
                         <p className={abril.className}>Renascimento</p>
                     </Link>
                     <Link href="/paginas/rococo" className={styles.imgQuadrado}>
