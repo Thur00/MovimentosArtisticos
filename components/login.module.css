@@ -2,7 +2,7 @@
     background-color: #dad2bc;
     width: 30vw;
     height: 70vh;
-    margin: 5% auto;
+    margin: 4% auto 0;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,6 @@
     justify-content: center;
     margin-top: 5%;
     text-decoration: none;
-    cursor: pointer;
 }
 
 .inputBotao button {
@@ -42,11 +41,13 @@
     border-radius: 10px;
     color: #dad2bc;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:800px) {
     .inputBox {
         width: 90%;
         height: 50vh;
+        margin-top: 30%;
     }
 }

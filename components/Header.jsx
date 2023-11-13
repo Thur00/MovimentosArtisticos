@@ -56,7 +56,7 @@ function Nav(props) {
         <>
             <div className="headerTitulo">
                 <h1 className={abril.className}>
-                    <Link href="/paginas/index">MOVIMENTOS ARTISTICOS</Link>
+                    <Link href="/paginas/index">MOVIMENTOS ARTÍSTICOS</Link>
                 </h1>
                 <div>
                     <h3 className={open.className}>
@@ -114,7 +114,7 @@ function Nav(props) {
 
                 <div className="headerTitulo">
                     <h1 className={abril.className}>
-                        <Link href="/paginas/index">MOVIMENTOS ARTISTICOS</Link>
+                        <Link href="/paginas/index">MOVIMENTOS ARTÍSTICOS</Link>
                     </h1>
                 </div>
                 <div className="mobile-menu-icon">

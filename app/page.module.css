@@ -1,0 +1,9 @@
+.tituloMargin {
+    margin: 0;
+}
+
+@media only screen and (max-width:800px) {
+    .tituloMargin {
+        margin: 10% 0;
+    }
+}

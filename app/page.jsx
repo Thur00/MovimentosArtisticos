@@ -14,8 +14,10 @@ const abril = Abril_Fatface({
 function LogIn() {
     return (
         <>
-            <div className="titulo">
-                <h1 className={abril.className}>Log In</h1>
+            <div className={styles.tituloMargin}>
+                <div className="titulo">
+                    <h1 className={abril.className}>Log In</h1>
+                </div>
             </div>
 
             <InputArea />
