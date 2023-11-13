@@ -5,6 +5,7 @@ import { cloneElement, useContext, useState } from "react";
 import { Abril_Fatface } from "next/font/google";
 import { Open_Sans } from "next/font/google";
 import { useUserContext } from "@/context/UserContext";
+import Image from "next/image";
 
 const abril = Abril_Fatface({
     subsets: ['latin'],
@@ -105,7 +106,7 @@ function Nav(props) {
 
                 <div className="mobile-menu-icon">
 
-                    <button onClick={menuShow} className="btn-icon"><img className="icon" src="/menuIcon.png" alt="Menu Icon" /></button>
+                    <button onClick={menuShow} className="btn-icon"><Image className="icon" src="/menuIcon.png" alt="Menu Icon" /></button>
 
                 </div>
             </nav>
@@ -119,7 +120,7 @@ function Nav(props) {
                 </div>
                 <div className="mobile-menu-icon">
 
-                    <button onClick={menuShow} className="btn-icon"><img className="icon" src="/menuIcon-close.png" alt="Menu Icon" /></button>
+                    <button onClick={menuShow} className="btn-icon"><Image className="icon" src="/menuIcon-close.png" alt="Menu Icon" /></button>
 
                 </div>
                 <ul className={open.className}>
